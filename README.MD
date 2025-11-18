@@ -17,13 +17,13 @@ to the anonymize method in AnonymizerEngine Class (line 104)
 ```
 
 * How many if/elif branches are used in selecting the operator?
-*Put your answer here*
+zero if/elif statements
 
 * What data structure (a Python data type) exactly is used to select the operator?
-*Put your answer here*
+Operator Factory - Dictionary Based \
 
 * Explain how "Strategy" design pattern is reflected here.
-
+The Strategy pattern shows up here because each operator is just a different "strategy" for anonymizing text. They all follow the same interface, and the engine can swap one strategy for another without changing its own code. New strategies can be added easily, which is excatly what the strategy pattern is about.
 
 ---
 
